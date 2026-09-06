@@ -89,6 +89,7 @@
     });
 
     if (cfg.music) {
+      // Kiểm tra file nhạc tồn tại rồi hiện nút
       fetch(cfg.music, { method: "HEAD" })
         .then((r) => {
           if (!r.ok) throw new Error("no");
@@ -96,7 +97,23 @@
           musicBtn.hidden = false;
         })
         .catch(() => {
-          musicBtn.hidden = true;
+          // Fallback: thử gán src trực tiếp (một số host không hỗ trợ HEAD)
+          bgMusic.src = cfg.music;
+          bgMusic.addEventListener(
+            "canplaythrough",
+            () => {
+              musicBtn.hidden = false;
+            },
+            { once: true }
+          );
+          bgMusic.addEventListener(
+            "error",
+            () => {
+              musicBtn.hidden = true;
+            },
+            { once: true }
+          );
+          bgMusic.load();
         });
     }
   }
