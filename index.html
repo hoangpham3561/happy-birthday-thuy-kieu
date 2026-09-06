@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#c9a4a0" />
+    <title>Happy Birthday — Thuý Kiều</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Great+Vibes&family=Quicksand:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="fx" aria-hidden="true"></canvas>
+
+      <button id="musicBtn" class="music-btn" type="button" aria-label="Bật/tắt nhạc" hidden>
+        <span class="music-icon">♪</span>
+      </button>
+
+      <!-- 1. Password -->
+      <section class="scene scene-pass is-active" data-scene="pass">
+        <div class="pass-box">
+          <p class="pass-eyebrow">Dành riêng cho</p>
+          <h1 class="pass-title script" id="passName">Thuý Kiều</h1>
+          <p class="pass-hint">Nhập mật khẩu để mở quà</p>
+          <form id="passForm" class="pass-form" autocomplete="off">
+            <input
+              id="passInput"
+              class="pass-input"
+              type="password"
+              inputmode="numeric"
+              maxlength="8"
+              placeholder="••••"
+              aria-label="Mật khẩu"
+            />
+            <button class="pass-submit" type="submit">Mở</button>
+          </form>
+          <p class="pass-error" id="passError" hidden>Sai mật khẩu rồi ạ 🥺</p>
+        </div>
+      </section>
+
+      <!-- 2. Intro lines -->
+      <section class="scene scene-intro" data-scene="intro">
+        <div class="intro-stage">
+          <p class="intro-text" id="introText"></p>
+          <div class="intro-rule" id="introRule"></div>
+          <p class="intro-sub" id="introSub"></p>
+        </div>
+      </section>
+
+      <!-- 3. Photo blocks → cake -->
+      <section class="scene scene-cake" data-scene="cake">
+        <p class="cake-caption" id="cakeCaption">Đang làm bánh cho em…</p>
+        <div class="cake-stage" id="cakeStage"></div>
+        <button class="cta-btn" id="cakeNext" type="button" hidden>Tiếp tục →</button>
+      </section>
+
+      <!-- 4. Letter card -->
+      <section class="scene scene-letter" data-scene="letter">
+        <article class="wish-card" id="wishCard">
+          <div class="wish-top">
+            <figure class="wish-photo">
+              <img id="wishImg" src="photos/3.jpg" alt="Thuý Kiều" />
+            </figure>
+            <div class="wish-side">
+              <p class="wish-stamp" id="wishStamp">Chúc mừng sinh nhật</p>
+              <h2 class="wish-greeting" id="wishGreeting">Gửi Em yêu,</h2>
+              <div class="wish-copy" id="wishCopyTop"></div>
+            </div>
+          </div>
+          <div class="wish-bottom" id="wishCopyBottom"></div>
+          <div class="wish-foot">
+            <span class="wish-kitty" aria-hidden="true">ฅ^•ﻌ•^ฅ</span>
+            <button class="surprise-btn" id="surpriseBtn" type="button">Quà bất ngờ</button>
+            <span class="wish-sign" id="wishSign">Anh</span>
+          </div>
+        </article>
+      </section>
+
+      <!-- 5. Ảnh + chữ rơi + gallery xoay (1 màn) -->
+      <section class="scene scene-fall" data-scene="fall">
+        <!-- Mưa chữ/ảnh nền -->
+        <div class="fall-rain" id="fallLayer" aria-hidden="true"></div>
+
+        <!-- Gallery 3D kéo xoay -->
+        <div class="fall-stage" id="fallStage">
+          <div class="fall-world" id="fallWorld"></div>
+        </div>
+
+        <p class="fall-hint" id="fallHint">Kéo để xoay</p>
+        <p class="fall-lyric" id="fallLyric">Và thế giới đã mất đi một người cô đơn…</p>
+      </section>
+
+      <div class="lightbox" id="lightbox" hidden>
+        <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Đóng">×</button>
+        <img id="lightboxImg" alt="" />
+      </div>
+    </div>
+
+    <audio id="bgMusic" loop preload="none"></audio>
+    <script src="js/config.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

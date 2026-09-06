@@ -1,0 +1,10 @@
+{
+  "name": "happy-birthday-thuy-kieu",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Birthday gift website for Thuý Kiều",
+  "scripts": {
+    "start": "npx --yes serve . -p 5173",
+    "dev": "npx --yes serve . -p 5173"
+  }
+}
