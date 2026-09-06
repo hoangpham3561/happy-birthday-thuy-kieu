@@ -42,7 +42,7 @@ window.BIRTHDAY_CONFIG = {
     greeting: "Gửi mặt trời nhỏ,",
     paragraphs: [
       "Chúc mừng sinh nhật nhé. Hôm nay là ngày của em — anh chỉ mong em luôn vui vẻ, khỏe mạnh, bình an và gặp thật nhiều điều may mắn.",
-      "Cảm ơn vì những lúc trò chuyện, những khoảnh khắc khiến anh thấy ngày dài cũng nhẹ hơn. Tuổi mới, cứ rạng rỡ và làm điều em thích nhé. Anh tin em làm được. Chúc em luôn vui như vậy.",
+      "Cảm ơn vì những lúc trò chuyện, những khoảnh khắc khiến anh thấy ngày dài cũng nhẹ hơn. Tuổi mới, cứ rạng rỡ và làm điều em thích nhé. Anh tin em làm được. Nếu anh có cơ hội hãy để anh bên cạnh em thật lâuu nháa iuu em.",
     ],
     sign: "Anh",
   },
