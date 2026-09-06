@@ -13,6 +13,16 @@ window.BIRTHDAY_CONFIG = {
     "photos/6.jpg",
     "photos/7.jpg",
     "photos/8.jpg",
+    "photos/9.jpg",
+    "photos/10.jpg",
+    "photos/11.jpg",
+    "photos/12.jpg",
+    "photos/13.jpg",
+    "photos/14.jpg",
+    "photos/15.jpg",
+    "photos/16.jpg",
+    "photos/17.jpg",
+    "photos/18.jpg",
   ],
 
   // Ảnh trong thiệp (ưu tiên portrait)
@@ -23,15 +33,15 @@ window.BIRTHDAY_CONFIG = {
   // Lời giới thiệu sau khi nhập mật khẩu
   intro: [
     "Hôm nay là sinh nhật của em",
-    "Công chúa của anh — Thuý Kiều",
+    "Mặt trời nhỏ — Thuý Kiều",
     "Anh có một món quà nhỏ…",
   ],
 
   letter: {
     stamp: "Chúc mừng sinh nhật",
-    greeting: "Gửi Em yêu,",
+    greeting: "Gửi mặt trời nhỏ,",
     paragraphs: [
-      "Chúc mừng sinh nhật em yêu. Hôm nay là ngày của em, và anh chỉ mong em luôn vui vẻ, khỏe mạnh, bình an và gặp thật nhiều điều may mắn. Cảm ơn em vì đã ở bên anh, mang đến sự ấm áp và những khoảnh khắc mà anh luôn trân trọng. Tuổi mới, anh mong em luôn rạng rỡ, tự tin làm điều mình thích, và luôn nhớ rằng anh thương em rất nhiều.",
+      "Chúc mừng sinh nhật mặt trời nhỏ của anh. Hôm nay là ngày của em, và anh chỉ mong em luôn vui vẻ, khỏe mạnh, bình an và gặp thật nhiều điều may mắn. Cảm ơn em vì đã ở bên anh, mang đến sự ấm áp và những khoảnh khắc mà anh luôn trân trọng. Tuổi mới, anh mong em luôn rạng rỡ, tự tin làm điều mình thích, và luôn nhớ rằng anh thương em rất nhiều.",
       "Em chính là ánh sáng và niềm vui lớn nhất của anh. Anh sẽ luôn bên em, yêu thương và hỗ trợ em vì mọi ước mơ. Hãy cứ tin tưởng vào bản thân em, vì anh luôn tin em có thể làm được tất cả. Anh thương em vô cùng!",
     ],
     sign: "Anh",
@@ -40,14 +50,14 @@ window.BIRTHDAY_CONFIG = {
   // Chữ rơi ở màn cuối
   fallingTexts: [
     "Chúc mừng sinh nhật",
-    "Công chúa của anh",
+    "Mặt trời nhỏ",
     "Thuý Kiều",
+    "Mặt trời nhỏ",
     "Yêu em nhiều lắm",
     "Happy Birthday",
     "Em là ánh sáng của anh",
     "Mãi bên em",
     "Sinh nhật vui vẻ",
-    "Công chúa của anh",
-    "Chúc mừng sinh nhật",
+    "Mặt trời nhỏ",
   ],
 };
